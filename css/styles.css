@@ -448,9 +448,12 @@ ul {
     justify-content: center;
     align-items: center;
 }
-
+.footer-box {
+    flex-grow: 1;
+}
 .footer-container.container {
     display: flex;
+    align-items: baseline;
 }
 .social-footer{
     margin-left: 70px;
@@ -555,7 +558,9 @@ ul {
     color: var(--primary-bg-color);
 }
 .subscribe-btn {
-    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 200px;
     height: 50px;
     background-color: var(--accent-color);
@@ -568,13 +573,11 @@ ul {
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--primary-bg-color);
-    padding-right: 28px;   
+       
 }
 .send-icon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 10px;    
+    margin-left: 10px; 
+
 }
 
 /* portfolio */
@@ -743,6 +746,7 @@ ul {
     align-items: center;
    border: 1px solid rgba(0, 0, 0, 0.1);
    background-color: var(--primary-bg-color); 
+   cursor: pointer;
 }
 
 .modal-title{
@@ -759,7 +763,6 @@ ul {
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
-    margin-bottom: 10px;
     padding-left: 42px;
     color:var(--primary-text-color);
     transition: border var(--time-distribution);
@@ -773,8 +776,18 @@ ul {
 }
 .modal-input {
     position: relative;
+    margin-bottom: 10px; 
+    /* margin-top: 4px;   */
 }
-
+.modal-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--title-text-color);
+    margin-bottom: 4px;
+    
+}
 .modal-svg {
     position: absolute;
    left: 12px;
@@ -793,20 +806,13 @@ ul {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.01em;
-   
+   resize: none;
 }
 .modal-textarea:focus{
     outline: none;
     border: 1px solid var(--accent-color);
 }
-.modal-label {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1,17;
-    letter-spacing: 0.01em;
-    color: var(--title-text-color);
-    margin-bottom: 4px;
-}
+
 
 .modal-checkbox {
     font-weight: 400;
@@ -814,7 +820,8 @@ ul {
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
-    display: flex; 
+    display: flex;
+    justify-content: center; 
     align-items: center;  
 }
 .modal-checkbox::before{
@@ -836,14 +843,16 @@ ul {
     margin-left: 5px;
 }
 .send-btn {
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);  
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 30px;
+    bottom: 40px; 
     width: 200px;
     height: 50px;
     background-color: var(--bg-color-btn);
     box-shadow: var(--box-shadow);
+    border: transparent;
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
@@ -851,4 +860,8 @@ ul {
     letter-spacing: 0.06em;
     color: var(--primary-bg-color);
     transition: var(--time-distribution);
+    cursor: pointer;
+}
+.checkbox-container{
+    margin-bottom: 30px;
 }

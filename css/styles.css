@@ -503,7 +503,6 @@ ul {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
      cursor: default; 
-     
      transition: color var(--time-distribution);
 }
 .footer-link:hover,
@@ -573,11 +572,10 @@ ul {
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--primary-bg-color);
-       
+     cursor: pointer;  
 }
 .send-icon {
     margin-left: 10px; 
-
 }
 
 /* portfolio */
@@ -697,9 +695,7 @@ ul {
 }
 .portfolio-link:hover .description,
 .portfolio-link:focus .description {
-
     transform: translate(-50%, -50%);
-
 }
 
 
@@ -748,7 +744,6 @@ ul {
    background-color: var(--primary-bg-color); 
    cursor: pointer;
 }
-
 .modal-title{
     font-weight: 700;
     font-size: 20px;
@@ -780,6 +775,7 @@ ul {
     /* margin-top: 4px;   */
 }
 .modal-label {
+    display: block;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -812,8 +808,6 @@ ul {
     outline: none;
     border: 1px solid var(--accent-color);
 }
-
-
 .modal-checkbox {
     font-weight: 400;
     font-size: 14px;
@@ -841,12 +835,13 @@ ul {
 }
 .policy-checkbox {
     margin-left: 5px;
+    cursor: default;
 }
 .send-btn {
     display: block;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
     bottom: 40px; 
     width: 200px;
     height: 50px;
